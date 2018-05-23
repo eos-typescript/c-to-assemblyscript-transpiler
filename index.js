@@ -13,7 +13,7 @@ function handleLine(line){
 	let returnType = line.split(" ")[0];
 	let name = line.split("(")[0].split(" ")[1];
 	let args = line.split("(")[1].split(")")[0].split(",");
-	line = name + "(";
+	line = "declare function " + name + "(";
 	for(i = 0; i < args.length; i++){
 		let a = args[i].trim().split(" ");
 		line += a[1] + ": " + changeTypes(a[0]) + ", ";
@@ -34,6 +34,7 @@ function changeTypes(line){
 	line = changeType(line, "int32_t", "i32");
 	line = changeType(line, "void\\*", "i32");
 	line = changeType(line, "const", "");
+	
 	return line;
 }
 
