@@ -1,0 +1,19 @@
+{
+  "name": "c-to-assemblyscript-transpiler",
+  "version": "1.0.0",
+  "description": "Quickly transpile c funtion headers to assemblyscript.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eos-assemblyscript/c-to-assemblyscript-transpiler.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/eos-assemblyscript/c-to-assemblyscript-transpiler/issues"
+  },
+  "homepage": "https://github.com/eos-assemblyscript/c-to-assemblyscript-transpiler#readme"
+}
