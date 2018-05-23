@@ -27,12 +27,12 @@ function handleLine(line){
 }
 
 function changeTypes(line){
-	line = changeType(line, "uint64_t\\*", "i32");//pointer
-	line = changeType(line, "uint32_t\\*", "i32");
+	line = changeType(line, "uint64_t\\*", "usize");//pointer
+	line = changeType(line, "uint32_t\\*", "usize");
 	line = changeType(line, "uint32_t", "u32");
 	line = changeType(line, "uint64_t", "u64");
 	line = changeType(line, "int32_t", "i32");
-	line = changeType(line, "void\\*", "i32");
+	line = changeType(line, "void\\*", "usize");
 	line = changeType(line, "const", "");
 	
 	return line;
